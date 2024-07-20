@@ -16,17 +16,17 @@ You can run `gen-v` using the command line. Below are the available options:
 
 ### Command Line Options
 
-| Option        | Alias | Description                                                   | Type      | Default Value                                                                           |
-| ------------- | ----- | ------------------------------------------------------------- | --------- | --------------------------------------------------------------------------------------- |
-| `--directory` | `-d`  | The directory to scan for `.env` variables                    | `string`  | Current working directory (`process.cwd()`)                                             |
-| `--exclude`   | `-e`  | Folders to exclude from the scan                              | `array`   | `["node_modules", "dist", "build", "test", ".git", "coverage", "public", "out", "tmp"]` |
-| `--prefixes`  | `-p`  | Prefixes used with env variables                              | `array`   | `["process.env"]`                                                                       |
-| `--name`      | `-n`  | Name of the output `.env` file                                | `string`  | `.env`-`timestamp`                                                                      |
-| `--output`    | `-o`  | Directory to place the generated `.env` file                  | `string`  | Current working directory (`process.cwd()`)                                             |
-| `--overwrite` | `-w`  | Flag to overwrite the previous `.env` file                    | `boolean` | `false`                                                                                 |
-| `--print`     |       | Print all of the environment variables found in the directory | `boolean` | `false`                                                                                 |
-| `--version`   | `-v`  | Displays the current version                                  |           |                                                                                         |
-| `--help`      | `-h`  | List all the commands                                         |           |                                                                                         |
+| Option      | Alias | Description                                                   | Type      | Default Value                                                                           |
+| ----------- | ----- | ------------------------------------------------------------- | --------- | --------------------------------------------------------------------------------------- |
+| `directory` | `-d`  | The directory to scan for `.env` variables                    | `string`  | Current working directory (`process.cwd()`)                                             |
+| `exclude`   | `-e`  | Folders to exclude from the scan                              | `array`   | `["node_modules", "dist", "build", "test", ".git", "coverage", "public", "out", "tmp"]` |
+| `prefixes`  | `-p`  | Prefixes used with env variables                              | `array`   | `["process.env"]`                                                                       |
+| `name`      | `-n`  | Name of the output `.env` file                                | `string`  | `.env`-`timestamp`                                                                      |
+| `output`    | `-o`  | Directory to place the generated `.env` file                  | `string`  | Current working directory (`process.cwd()`)                                             |
+| `overwrite` | `-w`  | Flag to overwrite the previous `.env` file                    | `boolean` | `false`                                                                                 |
+| `print`     |       | Print all of the environment variables found in the directory | `boolean` | `false`                                                                                 |
+| `version`   | `-v`  | Displays the current version                                  |           |                                                                                         |
+| `help`      | `-h`  | List all the commands                                         |           |                                                                                         |
 
 ## Example
 

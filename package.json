@@ -1,6 +1,6 @@
 {
   "name": "en-toolkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a package that can generate env files for your project",
   "main": "main.ts",
   "type": "module",
@@ -30,6 +30,12 @@
     "tag": "latest"
   },
   "license": "ISC",
+  "keywords": [
+    "env",
+    "env-generator",
+    "env-file",
+    "process"
+  ],
   "dependencies": {
     "glob": "^10.4.2",
     "yargs": "^17.7.2"
