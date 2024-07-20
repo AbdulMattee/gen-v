@@ -6,9 +6,25 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "npm run build && node dist/main.js"
+    "start": "npm run build && node dist/main.js",
+    "cli": "node dist/main.js"
   },
-  "author": "Abdul Mattee",
+  "bin": {
+    "gen-v": "./dist/main.js"
+  },
+  "author": {
+    "name": "Abdul Mattee",
+    "email": "abdulmattee123@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbdulMattee/gen-v.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest"
+  },
   "license": "ISC",
   "dependencies": {
     "glob": "^10.4.2",
@@ -18,6 +34,7 @@
     "@types/glob": "^8.1.0",
     "@types/node": "^20.14.11",
     "@types/yargs": "^17.0.32",
+    "ts-node": "^10.9.2",
     "typescript": "^5.5.3"
   }
 }
