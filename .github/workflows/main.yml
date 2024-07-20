@@ -1,6 +1,7 @@
 name: Publish npm Package
 
 on:
+  event: workflow_dispatch
   push:
     branches:
       - main
