@@ -132,7 +132,7 @@ async function main(): Promise<void> {
       type: "boolean",
       default: false,
     })
-    .version("v", "Displays the current version")
+    .version("v", "1.0.2")
     .help("h", "List all the commands").argv;
 
   try {

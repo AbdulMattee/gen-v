@@ -1,18 +1,18 @@
-# gen-v
+# en-toolkit
 
-`gen-v` is a command-line tool for generating and managing environment variables. It scans a directory for environment variables and creates a `.env` file based on the results. You can configure it to exclude certain folders, specify prefixes for environment variables, and control whether to overwrite existing `.env` files.
+`en-toolkit` is a command-line tool for generating and managing environment variables. It scans a directory for environment variables and creates a `.env` file based on the results. You can configure it to exclude certain folders, specify prefixes for environment variables, and control whether to overwrite existing `.env` files.
 
 ## Installation
 
-To use `gen-v`, you need to have Node.js and npm installed. You can install the package globally using npm:
+To use `en-toolkit`, you need to have Node.js and npm installed. You can install the package globally using npm:
 
 ```bash
-npm install -g gen-v
+npm install -g en-toolkit
 ```
 
 ## Usage
 
-You can run `gen-v` using the command line. Below are the available options:
+You can run `en-toolkit` using the command line. Below are the available options:
 
 ### Command Line Options
 
@@ -33,31 +33,31 @@ You can run `gen-v` using the command line. Below are the available options:
 1. It will generate an env in the root directory with name .env-timestamp
 
 ```bash
-gen-v
+en-toolkit
 ```
 
 2. Specify directory and exclude folders:
 
 ```bash
-gen-v --directory ./src --exclude '["node_modules", "dist"]'
+en-toolkit --directory ./src --exclude '["node_modules", "dist"]'
 ```
 
 3. Specify prefixes and output directory:
 
 ```bash
-gen-v --prefixes '["MY_APP"]' --output ./config
+en-toolkit --prefixes '["MY_APP"]' --output ./config
 ```
 
 4. Print environment variables without creating a file:
 
 ```bash
-gen-v --print
+en-toolkit --print
 ```
 
 5. Overwrite existing .env file:
 
 ```bash
-gen-v --overwrite
+en-toolkit --overwrite
 ```
 
 ## Contributing
