@@ -10,7 +10,7 @@
     "cli": "node dist/main.js"
   },
   "bin": {
-    "gen-v": "./dist/main.js"
+    "gen-v": "dist/main.js"
   },
   "author": {
     "name": "Abdul Mattee",
