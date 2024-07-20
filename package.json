@@ -1,0 +1,23 @@
+{
+  "name": "gen-v",
+  "version": "1.0.0",
+  "description": "This is a package that can generate or manage your envs.",
+  "main": "main.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/main.js"
+  },
+  "author": "Abdul Mattee",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^10.4.2",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/node": "^20.14.11",
+    "@types/yargs": "^17.0.32",
+    "typescript": "^5.5.3"
+  }
+}
