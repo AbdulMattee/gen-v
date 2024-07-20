@@ -1,7 +1,7 @@
 {
-  "name": "gen-v",
+  "name": "en-toolkit",
   "version": "1.0.0",
-  "description": "This is a package that can generate or manage your envs.",
+  "description": "This is a package that can generate env files for your project",
   "main": "main.ts",
   "type": "module",
   "scripts": {
@@ -9,8 +9,12 @@
     "start": "npm run build && node dist/main.js",
     "cli": "node dist/main.js"
   },
+  "files": [
+    "dist/main.js",
+    "dist/constant.js"
+  ],
   "bin": {
-    "gen-v": "dist/main.js"
+    "en-toolkit": "dist/main.js"
   },
   "author": {
     "name": "Abdul Mattee",
