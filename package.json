@@ -14,7 +14,7 @@
     "dist/constant.js"
   ],
   "bin": {
-    "en-toolkit": "dist/main.js"
+    "env-toolkit": "dist/main.js"
   },
   "author": {
     "name": "Abdul Mattee",

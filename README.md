@@ -1,18 +1,18 @@
-# en-toolkit
+# env-toolkit
 
-`en-toolkit` is a command-line tool for generating and managing environment variables. It scans a directory for environment variables and creates a `.env` file based on the results. You can configure it to exclude certain folders, specify prefixes for environment variables, and control whether to overwrite existing `.env` files.
+`env-toolkit` is a command-line tool for generating and managing environment variables. It scans a directory for environment variables and creates a `.env` file based on the results. You can configure it to exclude certain folders, specify prefixes for environment variables, and control whether to overwrite existing `.env` files.
 
 ## Installation
 
-To use `en-toolkit`, you need to have Node.js and npm installed. You can install the package globally using npm:
+To use `env-toolkit`, you need to have Node.js and npm installed. You can install the package globally using npm:
 
 ```bash
-npm install -g en-toolkit
+npm install -g env-toolkit
 ```
 
 ## Usage
 
-You can run `en-toolkit` using the command line. Below are the available options:
+You can run `env-toolkit` using the command line. Below are the available options:
 
 ### Command Line Options
 
@@ -33,31 +33,31 @@ You can run `en-toolkit` using the command line. Below are the available options
 1. It will generate an env in the root directory with name .env-timestamp
 
 ```bash
-en-toolkit
+env-toolkit
 ```
 
 2. Specify directory and exclude folders:
 
 ```bash
-en-toolkit --directory ./src --exclude '["node_modules", "dist"]'
+env-toolkit --directory ./src --exclude '["node_modules", "dist"]'
 ```
 
 3. Specify prefixes and output directory:
 
 ```bash
-en-toolkit --prefixes '["MY_APP"]' --output ./config
+env-toolkit --prefixes '["MY_APP"]' --output ./config
 ```
 
 4. Print environment variables without creating a file:
 
 ```bash
-en-toolkit --print
+env-toolkit --print
 ```
 
 5. Overwrite existing .env file:
 
 ```bash
-en-toolkit --overwrite
+env-toolkit --overwrite
 ```
 
 ## Contributing
