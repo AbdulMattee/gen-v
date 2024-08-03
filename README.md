@@ -4,7 +4,7 @@
 
 ## Generating Files
 
-By default, `env-toolkit` scans the current working directory for environment variables and generates a `.env` file with the format `env-timestamp`, you can pass a name of the output file or also overwrite the previous env file as well.
+By default, env-toolkit scans the current working directory for environment variables and generates a .env file with the format env-timestamp. You can pass a name for the output file or choose to overwrite the existing .env file.
 
 ```
 Scanned directory: my-fancy-project
@@ -15,7 +15,7 @@ Output file: /my-fancy-project/.env-1722716928992
 
 ## Printing Variables
 
-You can pass the `--print` option to print a table of all the variables found in the current directory. The variables are alphabetically ordered.
+Use the `--print` option to print a table of all the variables found in the current directory, ordered alphabetically.
 
 ```
 Scanned directory: my-fancy-project
@@ -34,7 +34,7 @@ Total environment variables found: 3
 
 ## Comparing Variables
 
-You can pass the `--compare` or `-c` option to compare your current env file (default: `.env`) and see what are the new variables that have been added or which of the variables have been removed. This can help you identify the changes in your `.env` rather than just creating or print all the variables.
+Use the `--compare` or `-c` option to compare your current .env file (default: .env) and see which variables have been added or removed. This helps identify changes rather than simply printing all variables.
 
 ```
 The current .env file is out of date!
@@ -53,7 +53,7 @@ Removed variables: 1
 
 ## Updating Variables
 
-You may not want to create a whole new `.env` file but just want the newly added variables, you can use the `--update` or `-u` option to update your existing `.env`. This will add all the new variables at the end of your `.env` file with the time
+If you only want to add newly added variables to your existing .env file, use the `--update` or `-u` option. This will append the new variables at the end of your .env file with the current time.
 
 ```
 # Newly added env variables (time)
