@@ -29,7 +29,6 @@ export const args = yargs(hideBin(process.argv))
     alias: 'n',
     description: 'Name of the output .env file',
     type: 'string',
-    default: DEFAULT_FILE_NAME,
   })
   .option('output', {
     alias: 'o',

@@ -1,7 +1,7 @@
 {
   "name": "env-toolkit",
   "version": "1.0.5",
-  "description": "This is a package that can generate env files for your project",
+  "description": "This is a package that can generate or compare env files for your project.",
   "main": "src/main.ts",
   "type": "module",
   "types": "dist/index.d.ts",

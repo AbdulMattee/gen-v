@@ -26,7 +26,11 @@ export function createEnvFile(envVars: string[], outputFile: string): void {
 
 export function getOutputFilePath(outputDirectory: string, outputFileName: string, overWritePrevEnv: boolean): string {
   const timestamp = new Date().getTime();
-  return join(outputDirectory, overWritePrevEnv || outputFileName ? outputFileName : `${DEFAULT_FILE_NAME}-${timestamp}`);
+  const filename = `${DEFAULT_FILE_NAME}-${timestamp}`;
+  return join(
+    outputDirectory,
+    overWritePrevEnv || outputFileName ? outputFileName ?? DEFAULT_FILE_NAME : `${DEFAULT_FILE_NAME}-${timestamp}`
+  );
 }
 
 export function readExistingEnvFile(envFilePath: string): Set<string> {
