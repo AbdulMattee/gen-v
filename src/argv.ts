@@ -1,6 +1,6 @@
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
-import { DEFAULT_EXCLUDE_FOLDERS, DEFAULT_VAR_PREFIXES, DEFAULT_OVERWRITE_PREV_ENV } from './constant.js';
+import { DEFAULT_EXCLUDE_FOLDERS, DEFAULT_VAR_PREFIXES, DEFAULT_OVERWRITE_PREV_ENV, DEFAULT_FILE_NAME } from './constant.js';
 const __dirname = process.cwd();
 
 export const args = yargs(hideBin(process.argv))
@@ -29,6 +29,7 @@ export const args = yargs(hideBin(process.argv))
     alias: 'n',
     description: 'Name of the output .env file',
     type: 'string',
+    default: DEFAULT_FILE_NAME,
   })
   .option('output', {
     alias: 'o',
